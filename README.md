@@ -3,10 +3,11 @@
 A nice matrix transpose solution
 
 ## Method
-Conventional **O(nm)**
+### Conventional O(nm)
+Loops through rows + columns of the matrix
 ```c++
 void Matrix::transp() {
-  double * T{new double[rows_*cols_]};
+  double * T{new double[rows_ * cols_]};
 
   for (int i=0; i < rows_; i++)
     for (int j=0; j < cols_; j++)
@@ -18,7 +19,8 @@ void Matrix::transp() {
 }
 ```
 
-Solution **O(1)** : found [here](src/Matrix.cpp)
+### Solution O(1) : found [here](src/Matrix.cpp)
+Stores boolean isTransposed. If transposed return cols=rows + rows=cols
 ```c++
 void Matrix::transp() {
   t_ = !t_;
