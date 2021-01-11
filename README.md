@@ -4,7 +4,7 @@ A nice matrix transpose solution
 
 Compile + Run
 ```bash
-g++ *.h && g++ *.cpp && ./a.out
+g++ src/*.h && g++ src/*.cpp && ./a.out
 ```
 
 Output
